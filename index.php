@@ -3,6 +3,8 @@
 include 'src/Bank.php';
 include 'src/Address.php';
 include 'src/Account.php';
+include 'src/Account/ChargingAccount.php';
+include 'src/Account/InterestAccount.php';
 include 'src/Customer.php';
 
 $address = new Address();
@@ -23,10 +25,10 @@ $donald->firstName = 'Donald';
 $donald->lastName = 'Duck';
 $donald->address = $address;
 
-$dagobertsAccount = new Account($dagobert);
+$dagobertsAccount = new InterestAccount($dagobert);
 $bank->openAccount($dagobertsAccount);
 
-$donaldsAccount = new Account($donald);
+$donaldsAccount = new ChargingAccount($donald);
 $bank->openAccount($donaldsAccount);
 
 $dagobertsAccount->deposit(1000);
@@ -38,5 +40,5 @@ $donaldsAccount->withdraw(100);
 echo $donaldsAccount->getBalance() . "\n";
 
 
-$donaldsAccount->transfer(100, $dagobertsAccount);
+//$donaldsAccount->transfer(100, $dagobertsAccount);
 var_dump($bank);
