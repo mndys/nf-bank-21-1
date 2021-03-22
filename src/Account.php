@@ -2,8 +2,8 @@
 
 class Account
 {
-    public int $balance = 0;
-    public Customer $holder;
+    protected int $balance = 0;
+    protected Customer $holder;
 
     public function __construct(Customer $holder)
     {
@@ -17,7 +17,9 @@ class Account
 
     public function withdraw(int $amount): void
     {
-        $this->balance -= $amount;
+        if ($amount <= $this->balance) {
+            $this->balance -= $amount;
+        }
     }
 
     public function getBalance(): string
