@@ -1,5 +1,7 @@
 <?php
 
+namespace Bank;
+
 class Bank
 {
     public string $name;

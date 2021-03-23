@@ -1,5 +1,7 @@
 <?php
 
+namespace Bank;
+
 abstract class Account
 {
     protected int $balance = 0;

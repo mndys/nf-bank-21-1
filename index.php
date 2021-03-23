@@ -1,11 +1,8 @@
 <?php
 
-include 'src/Bank.php';
-include 'src/Address.php';
-include 'src/Account.php';
-include 'src/Account/ChargingAccount.php';
-include 'src/Account/InterestAccount.php';
-include 'src/Customer.php';
+namespace Bank;
+
+include "vendor/autoload.php";
 
 $address = new Address();
 $address->street = 'Am Geldspeicher 1';

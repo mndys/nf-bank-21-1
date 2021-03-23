@@ -1,5 +1,7 @@
 <?php
 
+namespace Bank;
+
 class InterestAccount extends Account
 {
     public static int $interest = 2;

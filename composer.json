@@ -1,0 +1,17 @@
+{
+    "name": "mandy/nf-bank-21-1",
+    "type": "project",
+    "require": {
+        "monolog/monolog": "^2.2"
+    },
+    "authors": [
+        {
+            "name": "Mandy Schwarze",
+            "email": "mandy2301@me.com"
+        }
+    ],
+
+    "autoload": {
+        "psr-4": {"Bank\\": "src/*"}
+    }
+}
