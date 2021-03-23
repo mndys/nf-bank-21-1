@@ -1,12 +1,6 @@
 <?php
 
-include 'vendor/autoload.php';
-include 'src/Bank.php';
-include 'src/Address.php';
-include 'src/Account.php';
-include 'src/Account/ChargingAccount.php';
-include 'src/Account/InterestAccount.php';
-include 'src/Customer.php';
+include 'vendor/autoload.php'; 
 
 $address = new \NeueFische\Address();
 $address->street = 'Am Geldspeicher 1';

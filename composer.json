@@ -9,5 +9,10 @@
     ],
     "require": {
         "monolog/monolog": "^2.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "NeueFische\\": "src/"
+        }
     }
 }
