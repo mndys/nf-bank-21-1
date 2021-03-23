@@ -1,5 +1,6 @@
 <?php
 
+include 'vendor/autoload.php';
 include 'src/Bank.php';
 include 'src/Address.php';
 include 'src/Account.php';
@@ -41,4 +42,4 @@ echo $donaldsAccount->getBalance() . "\n";
 
 
 //$donaldsAccount->transfer(100, $dagobertsAccount);
-var_dump($bank);
+//var_dump($bank);

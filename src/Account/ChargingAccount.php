@@ -12,6 +12,7 @@ class ChargingAccount extends Account
     {
         $this->balance -= $amount;
         $this->balance -= static::$fee;
+        $this->logger->info("- " . ($amount - static::$fee));
     }
 
 }

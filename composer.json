@@ -1,0 +1,13 @@
+{
+    "name": "till/nf-bank",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Till Schander",
+            "email": "tillschander@gmail.com"
+        }
+    ],
+    "require": {
+        "monolog/monolog": "^2.2"
+    }
+}

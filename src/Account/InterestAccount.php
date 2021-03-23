@@ -11,5 +11,6 @@ class InterestAccount extends Account
     public function deposit(int $amount): void
     {
         $this->balance += $amount * static::$interest;
+        $this->logger->info("- " . $amount * static::$interest);
     }
 }
