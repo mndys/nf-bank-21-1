@@ -1,16 +1,8 @@
 <?php
 
-namespace Bank;
+namespace NeueFische\Account;
 
-use Monolog\Logger;
-
-
-$log = new Logger('name');
-$log->pushHandler(new StreamHandler('src/bank.log', Logger::WARNING));
-
-// add records to the log
-$log->warning('Foo');
-$log->error('Bar');
+use NeueFische\Account;
 
 class ChargingAccount extends Account
 {
@@ -20,6 +12,6 @@ class ChargingAccount extends Account
     {
         $this->balance -= $amount;
         $this->balance -= static::$fee;
-        $log->warning($this->balance -= static::$fee);
+        $this->logger->info("- " . ($amount - static::$fee));
     }
 }

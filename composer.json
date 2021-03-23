@@ -10,8 +10,9 @@
             "email": "mandy2301@me.com"
         }
     ],
-
     "autoload": {
-        "psr-4": {"Bank\\": "src/*"}
+        "psr-4": {
+            "NeueFische\\": "src/"
+        }
     }
 }

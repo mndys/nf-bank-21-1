@@ -1,6 +1,8 @@
 <?php
 
-namespace Bank;
+namespace NeueFische\Account;
+
+use NeueFische\Account;
 
 class InterestAccount extends Account
 {
@@ -9,5 +11,6 @@ class InterestAccount extends Account
     public function deposit(int $amount): void
     {
         $this->balance += $amount * static::$interest;
+        $this->logger->info("- " . $amount * static::$interest);
     }
 }

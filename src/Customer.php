@@ -1,6 +1,6 @@
 <?php
 
-namespace Bank;
+namespace NeueFische;
 
 class Customer
 {
