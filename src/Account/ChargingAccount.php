@@ -1,5 +1,9 @@
 <?php
 
+namespace NeueFische\Account;
+
+use NeueFische\Account;
+
 class ChargingAccount extends Account
 {
     public static int $fee = 2;

@@ -1,5 +1,7 @@
 <?php
 
+namespace NeueFische;
+
 class Bank
 {
     public string $name;

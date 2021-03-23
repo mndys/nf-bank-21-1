@@ -1,5 +1,7 @@
 <?php
 
+namespace NeueFische;
+
 class Customer
 {
     public string $firstName;

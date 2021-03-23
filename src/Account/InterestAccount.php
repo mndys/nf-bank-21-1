@@ -1,5 +1,9 @@
 <?php
 
+namespace NeueFische\Account;
+
+use NeueFische\Account;
+
 class InterestAccount extends Account
 {
     public static int $interest = 2;
