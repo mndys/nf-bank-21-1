@@ -1,6 +1,6 @@
 <?php
 
-class Account
+abstract class Account
 {
     protected int $balance = 0;
     protected Customer $holder;
